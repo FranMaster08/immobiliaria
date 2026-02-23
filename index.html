@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/immobiliaria/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/inmobiliaria-landing/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -15,10 +15,18 @@
       rel="stylesheet"
     />
     <title>Has Haus in Jois · Immobilienplattform</title>
-    <script type="module" crossorigin src="/immobiliaria/assets/index-BztAGZkd.js"></script>
-    <link rel="stylesheet" crossorigin href="/immobiliaria/assets/index-56s5pBVK.css">
+    <script type="module" crossorigin src="/inmobiliaria-landing/assets/index-C7H-1OA1.js"></script>
+    <link rel="stylesheet" crossorigin href="/inmobiliaria-landing/assets/index-56s5pBVK.css">
   </head>
   <body>
     <div id="root"></div>
+    <script type="text/javascript">
+      ;(function () {
+        const redirect = sessionStorage.getItem('redirect')
+        if (!redirect) return
+        sessionStorage.removeItem('redirect')
+        history.replaceState(null, '', redirect)
+      })()
+    </script>
   </body>
 </html>
